@@ -12,6 +12,12 @@ spring:
       prefix: /templates/
       suffix: .mustache
   datasource:
+#    hikari:
+#      driver-class-name: org.h2.Driver
+#      jdbc-url: jdbc:h2:tcp://localhost:9092/test
+#      jdbc-url: jdbc:h2:tcp://localhost:9093/test;MODE=MySQL # ./ Project root
+#      username: sa
+#      password: 1234
     url: jdbc:h2:mem:test;MODE=MySQL
     driver-class-name: org.h2.Driver
     username: sa

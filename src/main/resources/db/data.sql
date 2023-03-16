@@ -1,1 +1,1 @@
-INSERT INTO user
+INSERT INTO users_tb (username, pwd, email, created_at) Values ('me_ssar@nate.com', '1234', 'ssar@nate.com', now());

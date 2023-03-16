@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="shop.mtcoding.getinthere.model.UserRepository">
+    <select id="findByEmail" resultType="shop.mtcoding.getinthere.model.User">
+        SELECT * FROM users_tb WHERE email = #{email}
+    </select>
+
+    <insert id="insert">
+        INSERT INTO users_tb (username, pwd, email, provider, created_at) Values (#{username}, #{pwd}, #{email}, #{provider}, now());
+    </insert>
+</mapper>
